@@ -1,0 +1,5 @@
+<% @podcasts.each do |podcast| %>
+<h2><%= link_to podcast.title, podcast_path(podcast) %></h2>
+<% end %>
+
+<%= link_to "Add Podcast", new_podcast_path %>
