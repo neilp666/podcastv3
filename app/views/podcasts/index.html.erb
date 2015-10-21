@@ -1,5 +1,11 @@
-<% @podcasts.each do |podcast| %>
-<h2><%= link_to podcast.title, podcast_path(podcast) %></h2>
+<h1 class="current-category"><%= params[:category] %></h1>
+
+<% if @podcasts.count == 0 %>
+    <h1>There are no podcasts currently in this category</h1>
+  <% else %>
+
+  <% @podcasts.each do |podcast| %>
+    <h2><%= link_to podcast.title, podcast_path(podcast) %></h2>
+  <% end %>
 <% end %>
 
-<%= link_to "Add Podcast", new_podcast_path %>

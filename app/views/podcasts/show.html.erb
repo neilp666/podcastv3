@@ -1,7 +1,16 @@
-<h1><%= @podcast.title %></h1>
-<h1><%= @podcast.host %></h1>
+<h2><%= @podcast.title %></h2>
+<h3><%= @podcast.host %></h3>
+<h4>category: <%= @podcast.category.name %></h4>
 <p><%= @podcast.description %></p>
 
 <%= link_to "Back", root_path %>
-<%= link_to "Edit Podcast", edit_podcast_path(@podcast) %>
-<%= link_to "Delete Podcast", podcast_path(@podcast), method: :delete, data: { confirm: "Are You Sure?" } %>
+
+<% if user_signed_in? %>
+
+  <% if @podcast.user_id == current_user.id %>
+
+  <%= link_to "Edit Podcast", edit_podcast_path(@podcast) %>
+  <%= link_to "Delete Podcast", podcast_path(@podcast), method: :delete, data: { confirm: "Are You Sure?" } %>
+
+  <% end %>
+<% end %>
