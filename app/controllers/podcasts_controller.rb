@@ -50,7 +50,7 @@ class PodcastsController < ApplicationController
   private 
 
   def podcast_params
-    params.require(:podcast).permit(:title, :description, :host, :category_id)
+    params.require(:podcast).permit(:title, :description, :host, :category_id, :podcast_img)
   end
 
   def find_podcast

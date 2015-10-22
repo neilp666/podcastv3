@@ -1,7 +1,23 @@
-<h2><%= @podcast.title %></h2>
-<h3><%= @podcast.host %></h3>
-<h4>category: <%= @podcast.category.name %></h4>
-<p><%= @podcast.description %></p>
+<div class="row">
+  <div class="col-md-4">
+  <%= image_tag @podcast.podcast_img.url(:podcast_show), class: "podcast-show" %>
+  </div>
+
+<div class="col-md-8">
+  <h2><%= @podcast.title %></h2>
+  <h3><%= @podcast.host %></h3>
+  <p><%= @podcast.description %></p>
+</div>
+
+</div>
+
+<div class="row">
+
+  <div class="col-md-4">
+
+  </div>
+  
+</div>
 
 <%= link_to "Back", root_path %>
 
