@@ -14,9 +14,14 @@
 <div class="row">
 
   <div class="col-md-4">
+    <%= render @podcast.reviews %>
 
+  <div>
+    <%= link_to "Add Review", new_podcast_review_path(@podcast) %>
   </div>
-  
+
+</div>
+
 </div>
 
 <%= link_to "Back", root_path %>

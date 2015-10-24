@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
 
   devise_for :users
-  resources :podcasts
+  resources :podcasts do
+    resources :reviews
+  end
 
   root 'podcasts#index'
   # The priority is based upon order of creation: first created -> highest priority.
