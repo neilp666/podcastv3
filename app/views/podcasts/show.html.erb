@@ -6,6 +6,9 @@
 <div class="col-md-8">
   <h2><%= @podcast.title %></h2>
   <h3><%= @podcast.host %></h3>
+  <h2>Average Rating</h2>
+    <div class="average-review-rating" data-score=<%= @average_review %>></div>
+    <span>Based on <%= @podcast.reviews.count %> reviews</span>
   <p><%= @podcast.description %></p>
 </div>
 
