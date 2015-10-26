@@ -1,11 +1,19 @@
-<h1>Edit Podcast</h1>
+<div class="col-md-6 col-md-offset-3">
 
-<%= simple_form_for @podcast, :html => { :multipart => true } do |f| %>
-  <%= f.select :category_id, @categories %>
-  <%= f.file_field :podcast_img %>
-  <%= f.input :title, label: "Podcast Title" %>
-  <%= f.input :description %>
-  <%= f.input :host %>
-  <%= f.button :submit %>
-<% end %> 
+  <div class="edit-podcast-form">
+
+    <h1>Edit Podcast</h1>
+
+    <%= simple_form_for @podcast, :html => { :multipart => true } do |f| %>
+      <%= f.select :category_id, @categories %>
+      <%= f.file_field :podcast_img %>
+      <%= f.input :title, label: "Podcast Title" %>
+      <%= f.input :description %>
+      <%= f.input :host %>
+      <%= f.button :submit, :class => 'btn-custom2' %>
+    <% end %> 
+
+</div>
+
+</div>
 
