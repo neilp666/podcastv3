@@ -15,6 +15,7 @@ gem 'simple_form'
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'devise'
 gem 'paperclip', github: 'thoughtbot/paperclip'
+gem 'aws-sdk', '~> 2.1', '>= 2.1.31'
 
 gem 'rails_12factor', group: :production
 gem 'pg', group: :production
