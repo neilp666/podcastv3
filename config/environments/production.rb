@@ -81,6 +81,8 @@ Rails.application.configure do
 
 
    # config/environments/production.rb
+
+   # Setup Paperclip to Upload to Amazon s3 by default
 config.paperclip_defaults = {
   :storage => :s3,
      :s3_credentials => {
