@@ -11,13 +11,12 @@
  * file per style scope.
  *
  */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300italic,600italic);
+ @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300italic,600italic);
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
-
 body {
-background-color: #f5f5f5;
+
 }
 
 
@@ -52,16 +51,31 @@ background-color: #f5f5f5;
 }
 
 
+.jumbotron {
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Open-Sans', sans-serif;
-  font-weight: 300;
+  text-align: center;
+  background-color: white;
+  height: 300px;
+
+  h1 {
+  font-family: 'Pacifico', 'Helvetica Neue', Helvetica;
+  color: #330000;
+  font-weight: 400;
 
 }
 
-p.alert, p.notice {
-  margin: 0;
+p {
+    font-family:  "Helvetica Neue", Helvetica, sans-serif;
+    color: #000;
+  }
+
+
 }
+
+
+
+
+
 
 
 /* Navbar/navigation styles */
