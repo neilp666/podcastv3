@@ -10,25 +10,15 @@
     <h1>There are no podcasts currently in this category</h1>
   <% else %>
 
-
-<div class="main">
+  <div class="main">
   <div class="row">
-
-  <% @podcasts.each do |podcast| %>
-    
-    <div class="col-md-3">
-
-    <a href="/podcasts/<%= podcast.id %>">
-      <%= image_tag podcast.podcast_img.url(:podcast_index), class: "podcast" %>
-    </a>
-  </div>
-
-  <% end %>
+      <% @podcasts.each do |podcast| %>
+         <div class="col-md-3">
+         <%= image_tag podcast.podcast_img.url(:podcast_index) %>
+       </div>
+       <% end %> 
 </div>
 <% end %>
-
-
-
 
 <footer id="main_footer">
   <p class="copyright"> &copy; 2015 Neil Patel</p>
@@ -39,4 +29,5 @@
    </nav>
 </footer>
 </div>
+
 

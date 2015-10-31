@@ -21,7 +21,6 @@ body {
 }
 
 
-
 /* Signup/Login form styles */
 
 .signup-box {
@@ -54,10 +53,9 @@ body {
 
 
 .jumbotron {
-
   text-align: center;
   background-color: white;
-  height: 300px;
+  height: 280px;
 
   h1 {
   font-family: 'Pacifico', 'Helvetica Neue', Helvetica;
@@ -73,11 +71,6 @@ p {
 
 
 }
-
-
-
-
-
 
 
 /* Navbar/navigation styles */
@@ -103,7 +96,6 @@ p {
     .navbar-brand {
       color: #22292e;
       letter-spacing: 1.4px;
-      text-transform: uppercase;
       font-weight: 700;
     }
 
@@ -181,11 +173,10 @@ p {
 /* Book styles */
 
 .podcast {
-  height: 350px;
-  width: 250px;
-  margin-bottom: 40px;
-
+  margin: 5px;
+  width: 300px;
 }
+
 
 .podcast-show {
   height: 475px;
