@@ -1,12 +1,6 @@
 <div class="jumbotron center">
   <h1><i class="fa fa-headphones"></i> Podcastr.</h1>
   <p>Podcasts for curious minds</p>
-
-          <br>
-          
-       
-          <br>
-
 </div>
 
 
@@ -16,6 +10,8 @@
     <h1>There are no podcasts currently in this category</h1>
   <% else %>
 
+
+<div class="main">
   <div class="row">
 
   <% @podcasts.each do |podcast| %>
@@ -28,13 +24,9 @@
   </div>
 
   <% end %>
-
-
 </div>
-
-
-
 <% end %>
+
 
 
 
@@ -46,4 +38,5 @@
     <a href="http://github.com/neilp666" target="_blank"><i class="fa fa-github"></i></a>
    </nav>
 </footer>
+</div>
 

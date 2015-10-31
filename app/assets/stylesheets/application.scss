@@ -14,6 +14,7 @@
  @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300italic,600italic);
  @import "bootstrap-sprockets";
  @import "bootstrap";
+ @import "settings";
 
 body {
 
@@ -25,7 +26,7 @@ body {
 .signup-box {
   border-radius: 6px;
   padding: 20px;
-  margin-top: 60px;
+  margin-top: 25px;
 
   h2 {
     font-weight: normal;
@@ -326,11 +327,12 @@ p {
 
 }
 
-
+.main {
+  background-color: #FAFAF5;
+}
 
 #main_footer {
   padding: 2.5em 5%;
-  border-top: 1px solid #E9E9E9;
   .copyright {
     float: left;
     font-size: .9em;
